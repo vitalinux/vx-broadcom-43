@@ -1,0 +1,15 @@
+Source: vx-broadcom-43
+Section: utils
+Priority: extra
+Maintainer: Alberto Gacías <alberto@migasfree.org>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.3
+Homepage: https://github.com/vitalinux/vx-broadcom-43
+
+Package: vx-broadcom-43
+Architecture: all
+Pre-Depends: b43-fwcutter
+Depends: ${misc:Depends}
+Modaliases: wl(pci:v000014E4d*sv*sd*bc02sc80i*)
+Description: Install broadcom-43xx without inet
+ Install broadcom-43xx without inet
